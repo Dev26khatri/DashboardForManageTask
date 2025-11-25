@@ -8,7 +8,7 @@ This project is currently in active development and not yet fully functional.
 
 ## 📍 Project Status
 
-> ❗ **Work in Progress** – Only *Analytics Page* and *Tasks Page* UI have been developed so far.  
+> ❗ **Work in Progress** – Only *Analytics Page* ,*Tasks Page* ,*Notification Page* and *Account Page*  UI have been developed so far.  
 More modules such as Users, Settings, Authentication, and APIs will be added soon.
 
 ---
