@@ -1,3 +1,4 @@
+import { ChartPieSimple } from "@/components/ui/chart-pie-simple";
 import Link from "next/link";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         >
           Go To Dashboard
         </Link>
+        <ChartPieSimple />
       </div>
     </div>
   );
