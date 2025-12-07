@@ -4,26 +4,16 @@ A modern and responsive dashboard template for managing tasks, analytics, users,
 
 This project is currently in active development and not yet fully functional.
 
----
-
-## 📍 Project Status
-
-> ❗ **Work in Progress** – Only *Analytics Page* ,*Tasks Page* ,*Notification Page* and *Account Page*  UI have been developed so far.  
-More modules such as Users, Settings, Authentication, and APIs will be added soon.
-
----
-
 ## 🖥️ Tech Stack
 
-| Tech | Use |
-|------|-----|
-| **Next.js (App Router)** | Core Framework |
-| **Tailwind CSS** | Styling |
-| **ShadCN UI** | UI Components |
-| **Recharts** | Charts & Analytics |
+| Tech                     | Use                |
+| ------------------------ | ------------------ |
+| **Next.js (App Router)** | Core Framework     |
+| **Tailwind CSS**         | Styling            |
+| **ShadCN UI**            | UI Components      |
+| **Recharts**             | Charts & Analytics |
 
 ---
-
 
 ---
 
@@ -32,7 +22,14 @@ More modules such as Users, Settings, Authentication, and APIs will be added soo
 ```tsx
 "use client";
 
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
 const data = [
@@ -54,10 +51,10 @@ export default function AnalyticsPage() {
       <CardContent>
         <ResponsiveContainer width="100%" height={300}>
           <BarChart data={data}>
-            <XAxis dataKey="month" stroke="#94a3b8"/>
-            <YAxis stroke="#94a3b8"/>
+            <XAxis dataKey="month" stroke="#94a3b8" />
+            <YAxis stroke="#94a3b8" />
             <Tooltip />
-            <Bar dataKey="visits" fill="#4f46e5"/>
+            <Bar dataKey="visits" fill="#4f46e5" />
           </BarChart>
         </ResponsiveContainer>
       </CardContent>
@@ -65,16 +62,19 @@ export default function AnalyticsPage() {
   );
 }
 ```
+
 ###🛠 Installation
+
 ```
 git clone https://github.com/yourusername/DashboardForManageTask.git
 cd DashboardForManageTask
 npm install
 npm run dev
 ```
+
 Localhost:
+
 ```
 http://localhost:3000
 
 ```
-
